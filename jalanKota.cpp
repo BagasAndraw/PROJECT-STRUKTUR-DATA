@@ -20,11 +20,22 @@ Kota* createKota(string nama, int penduduk) {
 }
 
 Jalan* createJalan(string nama, string tipe, float panjang) {
-
+    Jalan* p = new Jalan;
+    p->namaJalan = nama;
+    p->tipeJalan = tipe;
+    p->panjangJalan = panjang;
+    p->next = NULL;
+    p->firstRelasi = NULL;
+    return p;
 }
 
 Relasi* createRelasi(Kota* k, Jalan* j) {
-
+    Relasi* r = new Relasi;
+    r->kota = k;
+    r->jalan = j;
+    r->nextKota = NULL;
+    r->nextJalan = NULL;
+    return r;
 }
 
 // INSERT 
