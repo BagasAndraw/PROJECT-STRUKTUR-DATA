@@ -2,7 +2,7 @@
 
 // INIT
 void initListKota(ListKota &L) {
- 
+    L.first = NULL;
 }
 
 void initListJalan(ListJalan &L) {
