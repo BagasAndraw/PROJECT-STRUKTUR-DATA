@@ -40,11 +40,19 @@ Relasi* createRelasi(Kota* k, Jalan* j) {
 
 // INSERT 
 void insertFirstKota(ListKota &L, Kota* p) {
-
+    p->next = L.first;
+    L.first = p;
 }
 
 void insertLastJalan(ListJalan &L, Jalan* p) {
-
+    if (L.first == NULL) {
+        L.first = p;
+    } else {
+        Jalan* q = L.first;
+        while (q->next != NULL)
+            q = q->next;
+        q->next = p;
+    }
 }
 
 // SEARCH 
