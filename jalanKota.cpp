@@ -6,12 +6,17 @@ void initListKota(ListKota &L) {
 }
 
 void initListJalan(ListJalan &L) {
- 
+    L.first = NULL;
 }
 
 // CREATE 
 Kota* createKota(string nama, int penduduk) {
-
+    Kota* p = new Kota;
+    p->namaKota = nama;
+    p->jumlahPenduduk = penduduk;
+    p->next = NULL;
+    p->firstRelasi = NULL;
+    return p;
 }
 
 Jalan* createJalan(string nama, string tipe, float panjang) {
