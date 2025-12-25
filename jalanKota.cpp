@@ -123,5 +123,18 @@ int countJalanDariKota(Kota* k) {
 
 // SHOW 
 void showAllKotaJalan(ListKota LK) {
+   Kota* k = LK.first;
+    while (k != NULL) {
+        cout << "Kota: " << k->namaKota
+             << " (Penduduk: " << k->jumlahPenduduk << ")\n";
 
+        Relasi* r = k->firstRelasi;
+        while (r != NULL) {
+            cout << "  - " << r->jalan->namaJalan
+                 << " | " << r->jalan->tipeJalan
+                 << " | " << r->jalan->panjangJalan << " km\n";
+            r = r->nextKota;
+        }
+        k = k->next;
+    }
 }
