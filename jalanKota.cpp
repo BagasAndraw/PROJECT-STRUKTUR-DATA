@@ -67,12 +67,18 @@ Kota* findKota(ListKota L, string nama) {
 }
 
 Jalan* findJalan(ListJalan L, string nama) {
-
+    Jalan* p = L.first;
+    while (p != NULL) {
+        if (p->namaJalan == nama)
+            return p;
+        p = p->next;
+    }
+    return NULL;
 }
 
 // RELASI
 void connectKotaJalan(Kota* k, Jalan* j) {
-
+    
 }
 
 // DELETE CHILD DARI PARENT
