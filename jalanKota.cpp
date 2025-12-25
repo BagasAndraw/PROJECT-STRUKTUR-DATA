@@ -89,7 +89,25 @@ void connectKotaJalan(Kota* k, Jalan* j) {
 
 // DELETE CHILD DARI PARENT
 void deleteJalanDariKota(Kota* k, string namaJalan) {
+    Relasi *prev = NULL, *r = k->firstRelasi;
 
+    while (r != NULL && r->jalan->namaJalan != namaJalan) {
+        prev = r;
+        r = r->nextKota;
+    }
+    if (r == NULL) return;
+
+    if (prev == NULL)
+        k->firstRelasi = r->nextKota;
+    else
+        prev->nextKota = r->nextKota;
+
+    Relasi **q = &r->jalan->firstRelasi;
+    while (*q != r)
+        q = &(*q)->nextJalan;
+    *q = r->nextJalan;
+
+    delete r;
 }
 
 // HITUNG CHILD
