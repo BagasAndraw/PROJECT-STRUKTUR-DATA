@@ -78,7 +78,13 @@ Jalan* findJalan(ListJalan L, string nama) {
 
 // RELASI
 void connectKotaJalan(Kota* k, Jalan* j) {
-    
+    Relasi* r = createRelasi(k, j);
+
+    r->nextKota = k->firstRelasi;
+    k->firstRelasi = r;
+
+    r->nextJalan = j->firstRelasi;
+    j->firstRelasi = r;
 }
 
 // DELETE CHILD DARI PARENT
