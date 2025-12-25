@@ -112,7 +112,13 @@ void deleteJalanDariKota(Kota* k, string namaJalan) {
 
 // HITUNG CHILD
 int countJalanDariKota(Kota* k) {
-
+    int count = 0;
+    Relasi* r = k->firstRelasi;
+    while (r != NULL) {
+        count++;
+        r = r->nextKota;
+    }
+    return count;
 }
 
 // SHOW 
