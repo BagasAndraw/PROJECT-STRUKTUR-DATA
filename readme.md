@@ -31,12 +31,12 @@ Proyek ini dibuat untuk memenuhi **Tugas Besar Mata Kuliah Struktur Data**, deng
 
 ## Fungsionalitas Program
 
-- ✔ Menambahkan data kota
-- ✔ Menambahkan data jalan
-- ✔ Menghubungkan kota dan jalan
-- ✔ Menampilkan seluruh kota beserta jalan yang dimiliki
-- ✔ Menghitung jumlah jalan pada suatu kota
-- ✔ Menghapus relasi jalan dari kota tertentu
+- Menambahkan data kota
+- Menambahkan data jalan
+- Menghubungkan kota dan jalan
+- Menampilkan seluruh kota beserta jalan yang dimiliki
+- Menghitung jumlah jalan pada suatu kota
+- Menghapus relasi jalan dari kota tertentu
 
 ## Struktur File Program
 
