@@ -1,20 +1,20 @@
 
-# 📍 Data Jalan Perkotaan
+# Data Jalan Perkotaan
 
-## 📝 Deskripsi Singkat
+## Deskripsi Singkat
 
 Proyek **Data Jalan Perkotaan** merupakan implementasi struktur data **multi linked-list dengan relasi Many-to-Many (M ke N)**. Sistem ini memodelkan hubungan antara **kota** dan **jalan**, di mana satu kota dapat memiliki banyak jalan, dan satu jalan dapat digunakan di banyak kota.
 
 Proyek ini dibuat untuk memenuhi **Tugas Besar Mata Kuliah Struktur Data**, dengan fokus pada penerapan linked list, pointer, dan relasi data secara terstruktur.
 
-## 🎯 Tujuan Program
+## Tujuan Program
 
 - Menerapkan konsep **multi linked-list**
 - Mengelola data kota dan jalan secara terpisah
 - Membentuk relasi **Many-to-Many** antara kota dan jalan
 - Menyediakan operasi dasar struktur data
 
-## 🧱 Struktur Data yang Digunakan
+## Struktur Data yang Digunakan
 
 ### List Kota
 - Nama Kota
@@ -29,7 +29,7 @@ Proyek ini dibuat untuk memenuhi **Tugas Besar Mata Kuliah Struktur Data**, deng
 - Pointer ke node Kota
 - Pointer ke node Jalan
 
-## ⚙️ Fungsionalitas Program
+## Fungsionalitas Program
 
 - ✔ Menambahkan data kota
 - ✔ Menambahkan data jalan
@@ -38,7 +38,7 @@ Proyek ini dibuat untuk memenuhi **Tugas Besar Mata Kuliah Struktur Data**, deng
 - ✔ Menghitung jumlah jalan pada suatu kota
 - ✔ Menghapus relasi jalan dari kota tertentu
 
-## 📂 Struktur File Program
+## Struktur File Program
 
 ```
 📁 Data-Jalan-Perkotaan
@@ -48,7 +48,7 @@ Proyek ini dibuat untuk memenuhi **Tugas Besar Mata Kuliah Struktur Data**, deng
 └── README.md
 ```
 
-## 🖥️ Menu Program
+## Menu Program
 
 ```
 ===== MENU DATA JALAN PERKOTAAN =====
@@ -61,15 +61,10 @@ Proyek ini dibuat untuk memenuhi **Tugas Besar Mata Kuliah Struktur Data**, deng
 0. Keluar
 ```
 
-## 🚀 Cara Menjalankan Program
+## Cara Menjalankan Program
 
 ```bash
 g++ kotaJalan.cpp main.cpp -o hasil
 ./hasil
 ```
 
-## 📌 Catatan Penting
-
-- Program menggunakan **menu berbasis switch-case**
-- Input digunakan sebagai alat bantu demonstrasi
-- Fokus utama tetap pada implementasi struktur data
